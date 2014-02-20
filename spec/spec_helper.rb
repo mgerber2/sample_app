@@ -27,6 +27,9 @@ Spork.each_run do
   # This code will be run each time you run your specs.
 
 end
+Webrat.configure do |config|
+    config.mode = :rails
+end
 
 # --- Instructions ---
 # Sort the contents of this file into a Spork.prefork and a Spork.each_run
