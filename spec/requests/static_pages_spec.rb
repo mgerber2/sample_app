@@ -40,7 +40,7 @@ describe "StaticPages" do
 # refine use of syntax of the tests
          it "should have the 'h1' element" do
              visit '/static_pages/about'
-             expect(page).to have_selector("h1", class: 'page-title')
+             expect(page).to have_selector("h1.page-title")
          end
          it "should have the 'dl' element" do
              visit '/static_pages/about'
@@ -56,15 +56,15 @@ describe "StaticPages" do
          end
          it "should have the 'section' element" do
              visit '/static_pages/about'
-             expect(page).to have_selector("section", class: 'main')
+             expect(page).to have_selector("section.main")
          end
          it "should have the 'h1.page-title' element" do
              visit '/static_pages/about'
-             expect(page).to have_selector("h1.page-title")
+             expect(page).to have_css("h1.page-title")
          end
          it "should have the '.main' element" do
              visit '/static_pages/about'
-             expect(page).to have_selector(".main")
+             expect(page).to have_css(".main")
          end
       end
      describe "Contact page" do
@@ -78,7 +78,7 @@ describe "StaticPages" do
          end
          it "should have the 'h1' element" do
              visit '/static_pages/contact'
-             expect(page).to have_selector("h1", class: 'page-title')
+             expect(page).to have_selector("h1.page-title")
          end
          it "should have the 'dl' element" do
              visit '/static_pages/contact'
@@ -94,15 +94,15 @@ describe "StaticPages" do
          end
          it "should have the 'section' element" do
              visit '/static_pages/contact'
-             expect(page).to have_selector("section", class: 'main')
+             expect(page).to have_selector("section.main")
          end
          it "should have the 'h1.page-title' element" do
              visit '/static_pages/contact'
-             expect(page).to have_selector("h1.page-title")
+             expect(page).to have_css("h1.page-title")
          end
          it "should have the '.main' element" do
              visit '/static_pages/contact'
-             expect(page).to have_selector(".main")
+             expect(page).to have_css(".main")
          end
      end
 end
