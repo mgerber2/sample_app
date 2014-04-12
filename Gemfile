@@ -20,7 +20,7 @@ end
 group :test do
    gem 'selenium-webdriver', '2.35.1'
    gem 'capybara', '2.1.0'
-   gem 'factory_girl_rails', '4.2.0'
+   gem 'factory_girl_rails', '4.2.1'
    gem 'cucumber-rails', '1.4.0', :require => false
    gem 'database_cleaner', github: 'bmabey/database_cleaner'
    gem 'libnotify', '0.8.0'
@@ -28,7 +28,7 @@ group :test do
 end
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '4.0.1'
+gem 'sass-rails', '4.0.2'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.1.1'
